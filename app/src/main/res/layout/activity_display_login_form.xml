@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uday.vero.DisplayLoginForm"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/seperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/fb_login_bn"
+        android:layout_marginTop="50dp"
+        android:text="                                           or                           "
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login_bn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp">
+
+    </com.facebook.login.widget.LoginButton>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/login_status"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="160dp">
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/Email_Input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextHint">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ematxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fb_login_bn"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/lightgrey"
+                android:textStyle="normal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextHint">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pwdtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/white"
+                android:hint="@string/password"
+                android:inputType="numberPassword|textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/lightgrey"
+                android:textStyle="normal"
+                android:password="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/buttonstylegreen"
+            android:text="@string/Elog_in"
+            android:textColor="@color/white"/>
+
+</LinearLayout>
+
+</RelativeLayout>

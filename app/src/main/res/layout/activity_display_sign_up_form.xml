@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.uday.vero.DisplaySignUpForm">
+
+    <TextView
+        android:id="@+id/signtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/EditTextHint">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/lightgrey"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textStyle="normal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutFirstName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/EditTextHint">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/fntxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="First name"
+            android:backgroundTint="@color/lightgrey"
+            android:inputType="textPersonName"
+            android:textStyle="normal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextHint">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/lntxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Last name"
+            android:backgroundTint="@color/lightgrey"
+            android:inputType="textPersonName"
+            android:textStyle="normal"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextHint">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            android:backgroundTint="@color/lightgrey"
+            android:inputType="textPassword|numberPassword"
+            android:textStyle="normal"
+            android:password="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Terms_CB"
+            android:text="@string/checkbox_title"
+            android:textColor="@color/lightgrey"/>
+
+        <Button
+            android:id="@+id/buttonsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/buttonstylegreen"
+            android:text="@string/Signup_with_email"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

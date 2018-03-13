@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Vero</string>
+    <string name="vero">VERO</string>
+    <string name="your_perfect_rental_place">Your Perfect Rental Place</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="facebook_app_id">144600859586798</string>
+    <string name="signin">EMAIL SIGN UP</string>
+    <string name="textview">TextView</string>
+    <string name="login_status">Login Status</string>
+    <string name="email">Email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="Signup_with_email">SignUp with Email</string>
+    <string name="checkbox_title">I agree to the terms of service and privacy policy</string>
+    <string name="or">_________________ or _________________</string>
+    <string name="Elog_in">Log In</string>
+    <string name="emptyString" />
+</resources>
